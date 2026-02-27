@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Master View</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="shortcut icon" href="Asset/logo.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="hero-top-actions">
+        <span id="tvIdBadge" class="tv-id-badge">TV ID: -</span>
+        <button id="themeToggleBtn" class="nav-btn icon-theme-btn" type="button" aria-label="Switch theme" title="Switch theme">
+          <i class="bi bi-moon-stars-fill" aria-hidden="true"></i>
+        </button>
+        <button id="fullscreenToggleBtn" class="nav-btn icon-fullscreen-btn" type="button" aria-label="Enter fullscreen" title="Enter fullscreen">
+          <i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>
+        </button>
+        <button id="logoutBtn" class="nav-btn logout-btn icon-logout-btn" type="button" aria-label="Logout">
+          <i class="bi bi-box-arrow-left" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="hero-meta-row">
+        <p id="masterHeader" class="hero-master"></p>
+        <p id="sectionHeader" class="hero-section">Loading...</p>
+      </div>
+      <div id="sectionList" class="section-list" aria-label="Sections"></div>
+    </header>
+
+    <section id="app" class="single-wrap">
+      <div class="loading-card single-card">Loading...</div>
+    </section>
+  </main>
+
+  <div id="tvLoginOverlay" class="login-overlay" hidden>
+    <form id="tvLoginForm" class="login-card" autocomplete="off">
+      <h2>TV Login</h2>
+      <label for="tvIdInput">Enter TV ID</label>
+      <input id="tvIdInput" type="text" name="tvId" placeholder="e.g. 1" />
+      <p id="tvLoginError" class="login-error" hidden></p>
+      <button type="submit" class="nav-btn">Login</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
