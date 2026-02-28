@@ -560,8 +560,12 @@ body.fullscreen-mode .sheet-tabs {
 .section-table th:not(:first-child),
 .section-table td:not(:first-child),
 .section-table td.num {
-  width: 15%;
+  width: 20%;
   text-align: right;
+}
+.com-bal{
+  font-size: 15px !important;
+  padding: 2px !important;
 }
 
 .section-table tbody tr.summary-row td,
@@ -571,6 +575,10 @@ body.fullscreen-mode .sheet-tabs {
 }
 
 .section-table tbody tr.completed-product-row td {
+  background: #143023;
+}
+
+.section-table tbody td.completed-cell {
   background: #143023;
 }
 
@@ -684,6 +692,10 @@ html[data-theme="light"] .section-table tbody tr.master-summary-row td {
 }
 
 html[data-theme="light"] .section-table tbody tr.completed-product-row td {
+  background: #dff7e8;
+}
+
+html[data-theme="light"] .section-table tbody td.completed-cell {
   background: #dff7e8;
 }
 
